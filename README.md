@@ -1,0 +1,1 @@
+We create a sample python app on Deta and we deploy it 
