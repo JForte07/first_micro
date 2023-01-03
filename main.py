@@ -18,3 +18,13 @@ src="https://www.googletagmanager.com/gtag/js?id=G-XFPGT0NR9L"></script>
 </script>
  """
  return prefix_google + "Hello World"
+
+#add logger 
+@app.route('/logger', methods=["GET"])
+def logger():
+    #print('hi')
+    app.logger.info('testing info log in the console')
+    script = """
+    <script> console.log("Hello, if you see me it means is working")</script>"""
+    print('Hello, if you see me it means is working')
+    return "hello word" + script
